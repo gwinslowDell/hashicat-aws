@@ -111,7 +111,7 @@ resource "aws_eip" "hashicat" {
 }
 
 resource "Department" "devops" {
-  
+  Billable  = "true"
 }
 resource "aws_eip_association" "hashicat" {
   instance_id   = aws_instance.hashicat.id
